@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QTimer>
 #include "workerthread.h"
 
 namespace Ui {
@@ -22,10 +23,12 @@ class MainWindow : public QMainWindow
     void updateElev(int val);
     void updateRotation(int val);
     void updateAile(int val);
+    void checkGamepad();
 
   private:
     Ui::MainWindow *ui;
     Workerthread worker;
+    QTimer timer;
 };
 
 #endif // MAINWINDOW_H
