@@ -114,6 +114,6 @@ void MainWindow::checkGamepad()
 
     int minAile = ui->aile_slider->minimum();
     int maxAile = ui->aile_slider->maximum();
-    ui->aile_slider->setValue(minAile + normLX*(maxAile-minAile));
+    ui->aile_slider->setValue(minAile + (1-normLX)*(maxAile-minAile)); // Reversed
   }
 }
