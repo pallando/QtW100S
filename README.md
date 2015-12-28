@@ -6,7 +6,7 @@ Tool designed to control a Walkera QR W100S from a PC
 Video is accessible on port 8080 (http://192.168.10.1:8080/?action=stream), but the stream is password protected (admin:admin123).
 Commands must be sent through port 2001 of the helicopter.
 
-This is what I do (according to what I got analyzing the packets):
+This is what I got when I analyzed the packets:
 - a packet of 18 bytes must be sent to the drone
 - first byte seems constant and equal to 97 (base 10) while the remote is on
 - last byte is a checksum
